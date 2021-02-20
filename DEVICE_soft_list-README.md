@@ -100,6 +100,7 @@ CONFIG_TARGET_ramips_mt7621_DEVICE_hiwifi_hc5962=y
 # CONFIG_TARGET_ramips_mt7621_DEVICE_netgear_r6850 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_netgear_wndr3700-v5 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_netis_wf2881 is not set
+# CONFIG_TARGET_ramips_mt7620_DEVICE_lenovo_newifi-y1 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_lenovo_newifi-d1 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_newifi-d2 is not set
 # CONFIG_TARGET_ramips_mt7621_DEVICE_d-team_pbr-m1 is not set
