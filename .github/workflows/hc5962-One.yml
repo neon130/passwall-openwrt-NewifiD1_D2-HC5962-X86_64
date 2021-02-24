@@ -35,7 +35,6 @@ env:
   CONFIG_FILE: hc5962-One.config
   DIY_P1_SH: diy-part1-hc5962-One.sh
   DIY_P2_SH: diy-part2.sh
-#  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
