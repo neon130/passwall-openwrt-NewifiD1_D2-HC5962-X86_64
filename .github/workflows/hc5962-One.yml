@@ -12,8 +12,12 @@ name: HC5962-One
 
 on:
   repository_dispatch:
-  release:
-    types: published
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
   push:
     branches:
       - master
@@ -31,11 +35,12 @@ env:
   CONFIG_FILE: hc5962-One.config
   DIY_P1_SH: diy-part1-hc5962-One.sh
   DIY_P2_SH: diy-part2.sh
-  SSH_ACTIONS: false
+#  SSH_ACTIONS: false
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
   UPLOAD_WETRANSFER: true
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
