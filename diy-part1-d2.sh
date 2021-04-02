@@ -14,3 +14,4 @@ sed -i 's/192.168.1.1/6.1.1.1/g' package/base-files/files/bin/config_generate
 # git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 # git clone https://github.com/kenzok8/small.git package/small
 sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+sed -i '$a src-git passwall https://github.com/yiguihai/luci-app-passwall-plus' feeds.conf.default
