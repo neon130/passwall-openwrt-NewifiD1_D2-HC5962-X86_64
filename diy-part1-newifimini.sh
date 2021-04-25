@@ -17,3 +17,9 @@ git clone https://github.com/kenzok8/small.git package/small
 # git clone https://github.com/yichya/luci-app-xray.git feeds/luci/applications/luci-app-xray
 # git clone https://github.com/yichya/openwrt-xray feeds/packages/applications/openwrt-xray
 # git clone https://github.com/yiguihai/luci-app-passwall-plus feeds/luci/applications/luci-app-passwall-plus
+git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
+git clone https://github.com/garypang13/smartdns-le package/smartdns-le
+wget -P package/lua-maxminddb https://raw.githubusercontent.com/garypang13/openwrt-packages/master/lua-maxminddb/Makefile
+wget -P package/redsocks2 https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/lean/redsocks2/Makefile
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
+find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
