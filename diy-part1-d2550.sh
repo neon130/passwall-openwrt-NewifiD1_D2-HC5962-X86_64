@@ -22,7 +22,7 @@ git clone https://github.com/kenzok8/small.git package/small
 sed -i 's/OpenWrt/OpenWrt-D2550/g' package/base-files/files/bin/config_generate
 
 # 首页增加CPU频率动态显示
-cp -f ../diy/mod-index.htm ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
+#cp -f ../diy/mod-index.htm ./feeds/luci/modules/luci-mod-admin-full/luasrc/view/admin_status/index.htm
 
 # 修改网关地址
 # sed -i 's/192.168.1.1/192.168.15.1/g' package/base-files/files/bin/config_generate
