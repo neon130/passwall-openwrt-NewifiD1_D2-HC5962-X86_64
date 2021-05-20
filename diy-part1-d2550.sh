@@ -19,8 +19,8 @@ echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/servi
 # sed -i '$a src-git xray https://github.com/felix-fly/xray-openwrt' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages
-git clone https://github.com/blacktitty-y/package/tree/main/lean.git package/openwrt-packages
-git clone https://github.com/lisaac/luci-app-diskman/tree/master/applications.git package/openwrt-packages
+# git clone https://github.com/blacktitty-y/package/tree/main/lean.git package/openwrt-packages
+# git clone https://github.com/lisaac/luci-app-diskman/tree/master/applications.git package/openwrt-packages
 # 修改机器名称
 sed -i 's/OpenWrt/OpenWrt-D2550/g' package/base-files/files/bin/config_generate
 
