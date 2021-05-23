@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: D2550
+name: X86_64
 
 on:
   repository_dispatch:
@@ -23,7 +23,7 @@ on:
     branches:
       - master
     paths:
-      - 'd2550.config'
+      - 'X86_64.config'
   schedule:
     - cron: 0 8 * * 5
   watch:
@@ -33,8 +33,8 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: 21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: d2550.config
-  DIY_P1_SH: diy-part1-d2550.sh
+  CONFIG_FILE: X86_64.config
+  DIY_P1_SH: diy-part1-X86_64.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
