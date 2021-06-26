@@ -18,7 +18,9 @@ sed -i 's/192.168.1.1/4.1.1.1/g' package/base-files/files/bin/config_generate
 # sed -i '$a src-git passwall-plus https://github.com/yiguihai/luci-app-passwall-plus' feeds.conf.default
 # sed -i '$a src-git xray https://github.com/felix-fly/xray-openwrt' feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages
+# git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages
+git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
+git clone https://github.com/kenzok8/small.git package/small
 # git clone https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-docker.git package/openwrt-packages
 # git clone https://github.com/jerrykuku/luci-app-ttnode.git package/openwrt-packages
 # git clone https://github.com/blacktitty-y/package/tree/main/lean.git package/openwrt-packages
