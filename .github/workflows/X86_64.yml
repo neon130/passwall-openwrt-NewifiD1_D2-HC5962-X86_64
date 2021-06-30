@@ -16,9 +16,9 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
+        required: true
 #         required: false
-        default: 'false'
+        default: 'true'
   push:
     branches:
       - master
