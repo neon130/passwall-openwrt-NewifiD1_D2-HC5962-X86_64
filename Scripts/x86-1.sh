@@ -25,6 +25,11 @@ git clone https://github.com/kenzok8/small.git package/small
 # git clone https://github.com/jerrykuku/luci-app-ttnode.git package/openwrt-packages
 # git clone https://github.com/blacktitty-y/package/tree/main/lean.git package/openwrt-packages
 # git clone https://github.com/lisaac/luci-app-diskman/tree/master/applications.git package/openwrt-packages
+
+sed -i 's#luci-theme-bootstrap#luci-theme-argon-19.07#g' feeds/luci/collections/luci/Makefile
+sed -i 's/bootstrap/argon/g' feeds/luci/modules/luci-base/root/etc/config/luci
+sed -i 's#include ../../luci.mk#include $(TOPDIR)/feeds/luci/luci.mk#g' package/diy/luci-app-dockerman/Makefile
+
 # 修改机器名称
 sed -i 's/OpenWrt/OpenWrt-D2550/g' package/base-files/files/bin/config_generate
 
