@@ -33,7 +33,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
-  KERNEL_CONF: MenuConfig/config-5.4
+#  KERNEL_CONF: MenuConfig/config-5.4
   CONFIG_FILE: X86_64.config
   DIY_P1_SH: diy-part1-X86_64.sh
   DIY_P2_SH: diy-part2.sh
