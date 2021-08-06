@@ -10,7 +10,7 @@ sed -i 's/192.168.1.1/7.1.1.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
 sed -i 's/OpenWrt/CM520-97F/g' package/base-files/files/bin/config_generate
 # 修改初始密码名称
-sed -i 's/password/123450/g' package/base-files/files/bin/config_generate
+# sed -i 's/password/123450/g' package/base-files/files/bin/config_generate
 # DNS Cache FixUP
 #echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/services/dnsmasq/files/dnsmasq.conf
 # mkdir package/base-files/files/config
@@ -19,6 +19,9 @@ sed -i 's/password/123450/g' package/base-files/files/bin/config_generate
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
+echo 'src-git kenzok8 https://github.com/kenzok8/openwrt-packages >>feeds.conf.default
+echo 'src-git kenzok8 https://github.com/kenzok8/small >>feeds.conf.default
+echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 # git clone https://github.com/garypang13/smartdns-le package/smartdns-le
