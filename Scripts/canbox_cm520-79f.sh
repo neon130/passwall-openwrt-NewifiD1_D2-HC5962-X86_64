@@ -21,7 +21,7 @@ git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packag
 git clone https://github.com/kenzok8/small.git package/small
 echo 'src-git kenzok8 https://github.com/kenzok8/openwrt-packages >>feeds.conf.default
 echo 'src-git kenzok8 https://github.com/kenzok8/small >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
 # git clone https://github.com/garypang13/smartdns-le package/smartdns-le
@@ -29,3 +29,29 @@ echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.co
 # wget -P package/redsocks2 https://raw.githubusercontent.com/coolsnowwolf/lede/master/package/lean/redsocks2/Makefile
 # find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-redir/shadowsocksr-libev-alt/g' {}
 # find package/*/ feeds/*/ -maxdepth 2 -path "*luci-app-bypass/Makefile" | xargs -i sed -i 's/shadowsocksr-libev-ssr-server/shadowsocksr-libev-server/g' {}
+#Del package
+rm -rf package/lean/qBittorrent
+rm -rf package/lean/qt5
+rm -rf package/diy/OpenAppFilter
+rm -rf package/lean/luci-app-filetransfer
+rm -rf package/lean/k3screenctrl
+rm -rf package/diy/luci-app-dockerman
+rm -rf package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
+
+# Install to emmc
+#git clone https://github.com/tuanqing/install-program package/install-program
+
+# Theme
+#git clone https://github.com/jerrykuku/luci-theme-argon.git package/custom/luci-theme-argon-19.07
+#rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/footer.htm
+#rm -rf package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/header.htm
+#svn export https://github.com/trombonist852/custom/trunk/footer.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
+#svn export https://github.com/trombonist852/custom/trunk/header.htm package/custom/luci-theme-argon-19.07/luasrc/view/themes/argon/
+
+
+#Add Package
+
+#Add files
+#mkdir package/base-files/files/etc/modules.d
+#svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
+svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
