@@ -43,7 +43,7 @@ env:
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
-​jobs:
+jobs:
   build:
     runs-on: ubuntu-18.04
 
