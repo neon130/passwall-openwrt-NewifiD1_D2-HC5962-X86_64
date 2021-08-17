@@ -19,7 +19,7 @@ sed -i 's/OpenWrt/CM520-97F/g' package/base-files/files/bin/config_generate
 # git clone -b lede https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
-git clone https://github.com/lisaac/luci-app-dockerman.git
+#git clone https://github.com/lisaac/luci-app-dockerman.git
 #echo 'src-git kenzok8 https://github.com/kenzok8/openwrt-packages >>feeds.conf.default
 #echo 'src-git kenzok8 https://github.com/kenzok8/small >>feeds.conf.default
 #sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
