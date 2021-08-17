@@ -21,6 +21,7 @@ echo -e "#max-ttl=600\nneg-ttl=600\nmin-cache-ttl=3600" >> package/network/servi
 # git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
 git clone https://github.com/kenzok8/small.git package/small
+git clone https://github.com/roacn/luci-app-cpufreq.git package/mine
 # git clone https://github.com/coolsnowwolf/lede/tree/master/package/lean/luci-app-docker.git package/openwrt-packages
 # git clone https://github.com/jerrykuku/luci-app-ttnode.git package/openwrt-packages
 # git clone https://github.com/blacktitty-y/package/tree/main/lean.git package/openwrt-packages
