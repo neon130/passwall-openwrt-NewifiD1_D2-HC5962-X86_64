@@ -6,7 +6,7 @@
 # Blog: https://p3terx.com
 #=================================================
 # Modify default IP
-sed -i 's/192.168.1.1/7.1.1.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/4.1.1.1/g' package/base-files/files/bin/config_generate
 # 修改机器名称
 sed -i 's/OpenWrt/CM520-97F/g' package/base-files/files/bin/config_generate
 # 修改初始密码名称
@@ -21,6 +21,7 @@ git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packag
 git clone https://github.com/kenzok8/small.git package/small
 echo 'src-git kenzok8 https://github.com/kenzok8/openwrt-packages >>feeds.conf.default
 echo 'src-git kenzok8 https://github.com/kenzok8/small >>feeds.conf.default
+sed -i '$a src-git dockerman https://github.com/lisaac/luci-app-dockerman' feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
 # git clone https://github.com/garypang13/luci-app-bypass.git package/luci-app-bypass
@@ -54,4 +55,4 @@ rm -rf package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac43
 #Add files
 #mkdir package/base-files/files/etc/modules.d
 #svn export https://github.com/maxlicheng/phicomm-n1-wireless/trunk/wireless_enable package/base-files/files/etc/modules.d/
-svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
+#svn checkout https://github.com/openwrt/luci/trunk/applications/luci-app-dockerman package/diy/luci-app-dockerman
