@@ -29,8 +29,8 @@ on:
     types: started
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: main
   FEEDS_CONF: feeds.conf.default
 #  KERNEL_CONF: MenuConfig/config-5.4
   CONFIG_FILE: MenuConfig/canbox_cm520-79f.config
