@@ -33,7 +33,7 @@ env:
   REPO_BRANCH: master
 #  REPO_URL: https://github.com/Lienol/openwrt
 #  REPO_BRANCH: 19.07
-  FEEDS_CONF: feeds.conf.default
+  FEEDS_CONF: Scripts/feeds.conf.default
 #  KERNEL_CONF: MenuConfig/config-5.4
   CONFIG_FILE: MenuConfig/hc5861.config
   DIY_P1_SH: Scripts/hc5861.sh
