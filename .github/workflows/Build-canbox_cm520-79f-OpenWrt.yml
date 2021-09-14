@@ -22,7 +22,7 @@ on:
     branches:
       - master
     paths:
-      - 'MenuConfig/canbox_cm520-79f.config'
+      - 'MenuConfig/canbox_cm520_79f.config'
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
@@ -33,8 +33,8 @@ env:
   REPO_BRANCH: 19.07
   FEEDS_CONF: Scripts/feeds.conf.default
 #  KERNEL_CONF: MenuConfig/config-5.4
-  CONFIG_FILE: MenuConfig/canbox_cm520-79f.config
-  DIY_P1_SH: Scripts/canbox_cm520-79f.sh
+  CONFIG_FILE: MenuConfig/canbox_cm520_79f.config
+  DIY_P1_SH: Scripts/canbox_cm520_79f.sh
   DIY_P2_SH: Scripts/diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
