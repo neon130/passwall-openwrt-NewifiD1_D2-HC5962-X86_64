@@ -37,7 +37,7 @@ rm -rf package/lean/qt5
 rm -rf package/diy/OpenAppFilter
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/k3screenctrl
-rm -rf package/diy/luci-app-dockerman
+#rm -rf package/diy/luci-app-dockerman
 rm -rf package/lean/k3-brcmfmac4366c-firmware/files/lib/firmware/brcm/brcmfmac4366c-pcie.bin
 
 # Install to emmc
